@@ -1,0 +1,46 @@
+@use "../../styles/partials/variables" as *;
+
+.nav {
+  font-family: bungee;
+  background-image: url("../../assets/images/space-one.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3px 0;
+
+  &__logo {
+    // margin-right: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: gugi;
+    font-size: 24px;
+  }
+
+  &__image {
+    margin: 0 2px;
+    height: 30px;
+    width: 30px;
+  }
+
+  &__link {
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 0 0 7px $active-purple, 0 0 10px $active-purple,
+      0 0 21px $active-purple, 0 0 42px $active-purple, 0 0 82px $active-purple,
+      0 0 92px $active-purple, 0 0 102px $active-purple,
+      0 0 151px $active-purple;
+
+    &--active {
+      @extend .nav__link;
+      color: fuchsia;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

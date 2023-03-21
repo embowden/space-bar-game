@@ -1,0 +1,98 @@
+@use "../../styles/partials/variables" as *;
+
+.intro {
+  padding: 0 180px;
+
+  &__container {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin: 50px 0;
+    font-family: gugi;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 72px;
+    color: white;
+  }
+
+  &__subtitle {
+    font-family: press start;
+    color: lime;
+    font-size: px;
+    margin-top: -20px;
+  }
+
+  &__animation {
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    bottom: 135px;
+  }
+
+  &__logo {
+    margin: 0 5px;
+    height: 100px;
+    width: 100px;
+  }
+
+  &__blurb {
+    text-align: justify;
+    padding: 20px 90px;
+    margin-bottom: 120px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+  }
+
+  &__input {
+    font-family: inherit;
+    text-align: center;
+  }
+
+  &__enter {
+    margin-top: 5px;
+    font-family: inherit;
+    color: black;
+    padding: 0 20px;
+    background-color: lime;
+    border: 1.5px solid black;
+    border-radius: 25px;
+    border: 0;
+
+    &:hover {
+      color: lime;
+      background-color: black;
+      border: 1.5px solid lime;
+    }
+  }
+
+  &__welcome {
+    font-family: press start;
+    margin-bottom: 20px;
+    z-index: 999;
+  }
+
+  &__returning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__disclaimer {
+    position: absolute;
+    right: 5px;
+    bottom: 40px;
+    color: $active-purple;
+    font-size: 10px;
+  }
+}

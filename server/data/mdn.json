@@ -1,0 +1,177 @@
+[
+  {
+    "id": "1",
+    "title": ".call()",
+    "summary": "The call() method calls a function with a given this value and arguments provided individually.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call",
+    "code": "function Product(name, price) {this.name = name; this.price = price;}"
+  },
+  {
+    "id": "2",
+    "title": ".hasOwnProperty()",
+    "summary": "The hasOwnProperty() method returns a boolean indicating whether the object has the specified property as its own property (as opposed to inheriting it).",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty",
+    "code": "console.log(object1.hasOwnProperty('property1'));"
+  },
+  {
+    "id": "3",
+    "title": "Exponentiation",
+    "summary": "The exponentiation operator (**) returns the result of raising the first operand to the power of the second operand. It is equivalent to Math.pow, except it also accepts BigInts as operands.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Exponentiation",
+    "code": "console.log((2 ** 3) ** 2);"
+  },
+  {
+    "id": "4",
+    "title": "Getter",
+    "summary": "The get syntax binds an object property to a function that will be called when that property is looked up.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get",
+    "code": "const obj = {log: ['a', 'b', 'c'], get latest() {if (this.log.length === 0) {return undefined;} return this.log[this.log.length - 1];}};"
+  },
+  {
+    "id": "5",
+    "title": ".splice()",
+    "summary": "The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place. To access part of an array without modifying it, see slice().",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice",
+    "code": "let removed = myFish.splice(2, 0, 'drum', 'guitar')"
+  },
+  {
+    "id": "6",
+    "title": "function",
+    "summary": "The function declaration (function statement) defines a function with the specified parameters.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function",
+    "code": "function calcRectArea(width, height) {return width * height;}"
+  },
+  {
+    "id": "7",
+    "title": ".concat()",
+    "summary": "The concat() method concatenates the string arguments to the calling string and returns a new string.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat",
+    "code": "const str1 = 'Hello'; const str2 = 'World'; console.log(str1.concat(' ', str2));"
+  },
+  {
+    "id": "8",
+    "title": "setTimeout()",
+    "summary": "The global setTimeout() method sets a timer which executes a function or specified piece of code once the timer expires.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/API/setTimeout",
+    "code": "let timeoutID = setTimeout(function[, delay, arg1, arg2, ...]);"
+  },
+  {
+    "id": "9",
+    "title": "console.debug()",
+    "summary": "The console.debug() method outputs a message to the web console at the debug log level.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/API/console/debug",
+    "code": "console.debug(obj1 [, obj2, ..., objN]);"
+  },
+  {
+    "id": "10",
+    "title": ".addEventListener()",
+    "summary": "The addEventListener() method of the EventTarget interface sets up a function that will be called whenever the specified event is delivered to the target.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener",
+    "code": "addEventListener(type, listener, options);"
+  },
+  {
+    "id": "11",
+    "title": "Promise",
+    "summary": "The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "code": "const myPromise = new Promise((resolve, reject) => {setTimeout(() => {resolve('foo');}, 300);});"
+  },
+  {
+    "id": "12",
+    "title": "Math.ceil()",
+    "summary": "The Math.ceil() function always rounds a number up to the next largest integer.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil",
+    "code": "console.log(Math.ceil(-7.004));"
+  },
+  {
+    "id": "13",
+    "title": "Function.length",
+    "summary": "The length property indicates the number of parameters expected by the function.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/length",
+    "code": "function func2(a, b) {}; console.log(func2.length);"
+  },
+  {
+    "id": "14",
+    "title": "JSON.parse()",
+    "summary": "The JSON.parse() method parses a JSON string, constructing the JavaScript value or object described by the string.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse",
+    "code": "const json = '{\"result\":true, \"count\":42}'; const obj = JSON.parse(json);"
+  },
+  {
+    "id": "15",
+    "title": "AsyncFunction",
+    "summary": "The AsyncFunction constructor creates a new async function object. In JavaScript, every asynchronous function is actually an AsyncFunction object.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncFunction",
+    "code": "Object.getPrototypeOf(async function(){}).constructor"
+  },
+  {
+    "id": "16",
+    "title": "Atomics.exchange()",
+    "summary": "The static Atomics.exchange() method stores a given value at a given position in the array and returns the old value at that position. ",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Atomics/exchange",
+    "code": "Atomics.exchange(uint8, 0, 2); console.log(Atomics.load(uint8, 0));"
+  },
+  {
+    "id": "17",
+    "title": "Right shift (>>=)",
+    "summary": "The right shift assignment operator (>>=) moves the specified amount of bits to the right and assigns the result to the variable.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift_assignment",
+    "code": "let a = 5; a >>= 2;"
+  },
+  {
+    "id": "18",
+    "title": "continue",
+    "summary": "The continue statement terminates execution of the statements in the current iteration of the current or labeled loop, and continues execution of the loop with the next iteration.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue",
+    "code": "let text = ''; for (let i = 0; i < 10; i++) {if (i === 3) {continue;} text = text + i;}"
+  },
+  {
+    "id": "19",
+    "title": "import",
+    "summary": "The static import statement is used to import read only live bindings which are exported by another module.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import",
+    "code": "import defaultExport, { export1 [ , [...] ] } from \"module-name\";"
+  },
+  {
+    "id": "20",
+    "title": ".toLocaleString()",
+    "summary": "The toLocaleString() method returns a string representing the elements of the array. The elements are converted to Strings using their toLocaleString methods and these Strings are separated by a locale-specific String (such as a comma \",\").",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toLocaleString",
+    "code": "const localeString = array1.toLocaleString('en', { timeZone: 'UTC' });"
+  },
+  {
+    "id": "21",
+    "title": ".reduceRight()",
+    "summary": "The reduceRight() method applies a function against an accumulator and each value of the array (from right-to-left) to reduce it to a single value.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceRight",
+    "code": "const array1 = [[0, 1], [2, 3], [4, 5]] .reduceRight((accumulator, currentValue) => accumulator.concat(currentValue));"
+  },
+  {
+    "id": "22",
+    "title": ".entries()",
+    "summary": "The entries() method returns a new Array Iterator object that contains the key/value pairs for each index in the array.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries",
+    "code": "const array1 = ['a', 'b', 'c']; const iterator1 = array1.entries(); console.log(iterator1.next().value);"
+  },
+  {
+    "id": "23",
+    "title": "BigInt",
+    "summary": "BigInt is a primitive wrapper object used to represent and manipulate primitive bigint values — which are too large to be represented by the number primitive.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt",
+    "code": "const hugeString = BigInt(\"9007199254740991\")"
+  },
+  {
+    "id": "24",
+    "title": ".buffer",
+    "summary": "The buffer accessor property represents the ArrayBuffer or SharedArrayBuffer referenced by the DataView at construction time.",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView/buffer",
+    "code": "const buffer = new ArrayBuffer(123); const view = new DataView(buffer); console.log(view.buffer.byteLength);"
+  },
+  {
+    "id": "25",
+    "title": "Loop",
+    "summary": "A loop is a sequence of instructions that is continually repeated until a certain condition is met in computer programming. ",
+    "link": "https://developer.mozilla.org/en-US/docs/Glossary/loop",
+    "code": "for (statement 1; statement 2; statement 3){ execute code block };"
+  }
+]
