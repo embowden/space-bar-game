@@ -56,7 +56,7 @@ const Code = () => {
               <li className="code__stats-underline">
                 Biscuits eaten &nbsp; &nbsp; &nbsp;
               </li>
-              {/* <li className="code__stats-underline">Dedicated To</li> */}
+              <li className="code__stats-underline">Dedicated To</li>
             </ul>
             <ul className="code__stats-answers">
               <li className="code__stats-underline">2 weeks</li>
@@ -69,7 +69,7 @@ const Code = () => {
               <li className="code__stats-underline">6</li>
               <li className="code__stats-underline">16</li>
               <li className="code__stats-underline">too many </li>
-              {/* <li className="code__stats-underline">JDT </li> */}
+              <li className="code__stats-underline">JDT </li>
             </ul>
           </div>
         </article>
@@ -80,18 +80,18 @@ const Code = () => {
             free to checkout the code for this project, or fork it to create
             your own version! The links for this project are below:
             <div className="code__visit-links">
-              <a
+              {/* <a
                 className="code__visit-link"
                 href="https://github.com/embowden/emma-woodlock-capstone-client"
               >
                 client side
               </a>
-              ||
+              || */}
               <a
                 className="code__visit-link"
-                href="https://github.com/embowden/emma-woodlock-capstone-server"
+                href="https://github.com/embowden/space-bar-game"
               >
-                server side
+                spacebar github repo
               </a>
             </div>
           </p>
